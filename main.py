@@ -93,10 +93,15 @@ async def on_message(message):
 
 @client.event
 async def on_message(message):
-  if message.author.client:
+  if message.author.bot:
     return
   if "$config" in message.content:
     await message.channel.send("**Configs are not Released.. yet...**\r\n"
                                "Configs for Clients")
+  if "$help" in message.content:
+    await message.channel.send("**help page for Kawaii-Bot**\r\n"
+                               "$about        $config       $inspire\r\n"
+                               "$release      $github       $uwu\r\n"
+                               "more in the Future!")
 keep_alive()
 client.run("You naught boy")
