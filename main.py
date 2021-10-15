@@ -91,5 +91,12 @@ async def on_message(message):
       db["responding"] = False
       await message.channel.send("Responding is off.")
 
+@client.event
+async def on_message(message):
+  if message.author.client:
+    return
+  if "$config" in message.content:
+    await message.channel.send("**Configs are not Released.. yet...**\r\n"
+                               "Configs for Clients")
 keep_alive()
 client.run("You naught boy")
