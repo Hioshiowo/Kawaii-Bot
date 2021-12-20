@@ -173,4 +173,4 @@ async def on_message(message):
 
 
 keep_alive()
-client.run("ODkyNzkzNTE5MzQ4MDE1MjA1.YVSEwg.-C2c4Z3RC3WGqW4jYsGi45mmxPo")
+client.run("You silly men")
